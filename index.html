@@ -51,7 +51,9 @@
 			divisable=div%divv;
 			document.write("divisable",divisable);
 			document.write("<br>");
-			
+		
+
+		//aasignment operator
 		//pre increment
 		let pre=5;
 			++pre;
@@ -99,7 +101,7 @@
 			
 		//strictequal
 		let num9=10;
-			num10=10;
+			num10="10";
 			document.write("strictequal", num9===num10);
 			document.write("<br>");
 			
@@ -130,6 +132,102 @@
 			not1=11;
 			document.write("not",!(not>not1));
 			document.write("<br>");
+			
+			
+			// Bitwise
+
+            // 0 0 0 0 0 0 0 0 0 0 0 0 0
+            //              32 16 8 4 2 1
+
+
+				//AND
+				document.write(5 & 1); // 0101 & 0001
+				document.write("<br>");
+				// OR
+				document.write(5 | 1); // 0101 | 0001
+				document.write("<br>");
+				//NOT 
+				document.write(~ 5); // ~0101
+				document.write("<br>");
+				//XOR
+				document.write(5 ^ 1); // 0101 ^ 0001
+				document.write("<br>");
+				// left shift
+				document.write(5 << 1);
+				document.write("<br>");
+				//right shift
+				document.write(5 >> 1);
+				document.write("<br>");
+								
+								
+				// string operator
+
+				let nu="hello";
+				let nu2="world";
+				document.write(nu+ nu2);
+				document.write("<br>");
+				document.write(nu +""+ nu2);
+				document.write("<br>");
+				document.write(nu+ 4+ 4);
+				document.write("<br>");
+				document.write(4 - "2");
+				document.write("<br>");
+				document.write(4+null);
+				document.write("<br>");
+				document.write("4"+null);
+				document.write("<br>");
+				document.write("4"*2);
+				document.write("<br>");
+				document.write("4" % "2");
+				document.write("<br>");
+
+				
+				//type operator
+				document.write(Number(true));
+				document.write("<br>");
+				document.write(Boolean(1));
+				document.write("<br>");
+				document.write(Number("ten"));
+				document.write("<br>");
+				document.write(Number(null));
+				document.write("<br>");
+				document.write(Number(undefined));
+				document.write("<br>");
+
+
+									// instanceof
+
+				var text={name:"mani"};
+				document.write(text instanceof Array);
+				document.write("<br>");
+				document.write(text instanceof Object);
+				document.write("<br>");
+
+				var text2=["mobilephone", "tv"];
+				document.write(text2 instanceof Array);
+				document.write("<br>");
+				document.write(text2 instanceof Object);
+				document.write("<br>");
+
+				//                   comma
+
+				document.write(a,b,text,text2);
+				document.write("<br>");
+
+				//               delete
+
+				let details={name:"mani",degree:"B.E", department:"cse"};
+				delete details.degree;
+				console.log(details);
+				document.write("<br>");
+
+				//in
+				const cars=['audi', 'bmw', 'swift','rolls royce','range rover'];
+				document.write(0 in cars); 
+				document.write("<br>");
+				document.write('length' in cars); 
+				document.write("<br>");
+				document.write('swift' in cars); 
 		
 	</script>
 </body>
